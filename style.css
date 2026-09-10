@@ -1,14 +1,14 @@
-/* Color Palette & lightning logo */
+/* Color Palette */
 :root {
   --nav-bg: #112233;            /* Dark navy blue */
   --accent-amber: #f59e0b;       /* Golden amber from the logo */
-  --accent-hover: #d97706;       /* Slightly darker amber for hover */
+  --accent-hover: #d97706;       /* Darker amber for hover */
   --accent-light: #fffbeb;       /* Light amber tint */
-  --card-bg: #fbf9f1;           /* Soft cream/beige card background */
-  --card-border: #ede8d5;       /* Subtle card border */
+  --card-bg: #fbf9f1;           /* Soft warm cream card background */
+  --card-border: #ede8d5;       /* Subtle warm border */
   --text-dark: #1e293b;         /* Primary text */
   --text-muted: #475569;        /* Secondary muted text */
-  --body-bg: #ffffff;           /* Clean white backdrop */
+  --body-bg: #ffffff;           /* Clean white background */
 }
 
 * {
@@ -32,6 +32,9 @@ header {
   border-bottom: 3.5px solid var(--accent-amber);
   padding: 0.6rem 2rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .nav-container {
@@ -42,7 +45,7 @@ header {
   gap: 1.5rem;
 }
 
-/* Circular Logo Button with Image Support */
+/* Circular Logo Button */
 .logo-btn {
   background-color: transparent;
   border: 2px solid #ca8a04;
@@ -70,7 +73,7 @@ header {
   display: block;
 }
 
-/* Nav links */
+/* Navigation Links */
 nav {
   display: flex;
   align-items: center;
@@ -89,13 +92,11 @@ nav {
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Mouseover feedback */
 .nav-link:hover {
   background-color: rgba(255, 255, 255, 0.12);
   color: #fef08a;
 }
 
-/* Active page feedback */
 .nav-link.active {
   background-color: var(--accent-amber);
   color: #111827;
@@ -146,7 +147,7 @@ nav {
   margin-bottom: 1.5rem;
 }
 
-/* Soft Rounded Card */
+/* Cards */
 .info-card {
   background-color: var(--card-bg);
   border: 1px solid var(--card-border);
@@ -184,49 +185,97 @@ nav {
   color: #555;
 }
 
-/* Data Story Styles */
-.data-story-section h2 {
-  font-size: 1.5rem;
+/* Data Story Section */
+.data-story-section {
+  margin-top: 2.5rem;
+}
+
+.data-story-section > h2 {
+  font-size: 1.6rem;
   font-weight: 800;
   color: #0f172a;
-  margin-top: 2rem;
-  margin-bottom: 0.8rem;
+  margin-bottom: 0.5rem;
 }
 
-.data-story-section p {
+.data-story-section > p {
   line-height: 1.6;
   color: var(--text-dark);
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 
-.data-story-section h3 {
+/* Individual Chart Items */
+.chart-item {
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.chart-item h3 {
   font-size: 1.15rem;
   font-weight: 700;
-  margin-top: 1.5rem;
-  margin-bottom: 0.4rem;
+  color: #0f172a;
+  margin-bottom: 0.35rem;
+  line-height: 1.4;
 }
 
-.chart-placeholder-label {
+.chart-type-label {
   font-weight: 600;
-  color: #334155;
+  color: #475569;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
 }
 
+.chart-caption {
+  margin-top: 0.85rem;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--text-dark);
+}
+
+/* Chart Box & Image Presentation */
 .chart-box {
-  min-height: 180px;
   display: flex;
-  align-items: flex-end;
   justify-content: center;
-  padding: 1rem;
+  align-items: center;
+  padding: 1.25rem;
+  background-color: var(--card-bg);
+  border: 1px solid var(--card-border);
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
 }
 
-.placeholder-tag {
-  font-size: 0.8rem;
-  color: #64748b;
-  border-top: 2px solid var(--accent-amber);
-  padding-top: 0.25rem;
+.chart-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
 }
 
-/* Footer styling */
+/* Data Story Conclusion Block */
+.conclusion-card {
+  background-color: var(--card-bg);
+  border-left: 4px solid var(--accent-amber);
+  border-radius: 8px;
+  padding: 1.5rem 1.75rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.conclusion-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.conclusion-card p {
+  line-height: 1.65;
+  color: var(--text-dark);
+}
+
+/* Footer */
 footer {
   background-color: var(--nav-bg);
   border-top: 3.5px solid var(--accent-amber);
