@@ -3,65 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Appliance Energy Consumption</title>
+  <title>Appliance Energy Use in Australia</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Navigation Header -->
-  <header>
-    <div class="logo-container" id="logo-btn" title="Go to Home">
-      <!-- Power Icon SVG -->
-      <svg class="power-icon" viewBox="0 0 24 24" width="28" height="28">
-        <path d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42A6.92 6.92 0 0 1 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.38 1.19-4.47 3-5.74L6.58 5.17A8.96 8.96 0 0 0 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z" fill="currentColor"/>
-      </svg>
-      <span class="site-title">EnergyAus</span>
-    </div>
 
-    <nav>
-      <button class="nav-link active" data-target="home">Home</button>
-      <button class="nav-link" data-target="televisions">Televisions</button>
-      <button class="nav-link" data-target="about">About Us</button>
-    </nav>
+  <!-- Top Navigation Header -->
+  <header>
+    <div class="nav-container">
+      <!-- Lightning Power Logo Button -->
+    <button class="logo-btn" id="logo-btn" title="Return to Home">
+        <img src="PowerIcon.png" alt="Power Logo" class="logo-img" />
+    </button>
+
+      <!-- Navigation Links -->
+      <nav>
+        <button class="nav-link active" data-target="home">Home</button>
+        <button class="nav-link" data-target="televisions">Televisions</button>
+        <button class="nav-link" data-target="about">About Us</button>
+      </nav>
+    </div>
   </header>
 
-  <!-- Page 1: Home -->
-  <main id="home" class="page-section active">
-    <h1>Australian Household Appliance Energy Overview</h1>
-    <p>Energy rating labels help Australian households compare the running costs and energy efficiency of common domestic appliances.</p>
-    <div class="card">
-      <h2>National Energy Consumption Highlights</h2>
-      <p>Standby power alone accounts for up to <strong>10%</strong> of average household electricity usage across Australia. Investing in higher star-rated appliances significantly reduces lifetime operating costs and greenhouse gas emissions.</p>
-    </div>
-  </main>
+  <!-- Main Content Body -->
+  <div class="page-wrapper">
 
-  <!-- Page 2: Televisions -->
-  <main id="televisions" class="page-section">
-    <h1>Television Energy Ratings</h1>
-    <p>In the Australian market, television energy consumption varies widely based on panel display technology (OLED, QLED, LED) and screen size.</p>
-    <div class="card">
-      <h2>Energy Rating Breakdown</h2>
-      <ul>
-        <li><strong>Screen Size:</strong> 65-inch screens typically consume 50% more energy than comparable 43-inch models.</li>
-        <li><strong>Star Ratings:</strong> A 7-star rated TV can cut annual running costs by nearly half compared to an equivalent 4-star model.</li>
-        <li><strong>Future Visualisations:</strong> Interactive D3 charts displaying market television data sets will be linked here in upcoming tasks.</li>
-      </ul>
-    </div>
-  </main>
+    <!-- Page 1: Home -->
+    <main id="home" class="page-section active">
+      <h1 class="page-title">Appliance Energy Use in Australia</h1>
+      <p class="lead-text">This site gives a simple overview of household appliance energy consumption in the Australian market.</p>
+      
+      <div class="info-card">
+        <h2>Quick facts</h2>
+        <ul>
+          <li>Energy labels (star ratings) help compare appliance efficiency at a glance.</li>
+          <li>Standby power can add unexpected costs—turn devices fully off when not in use.</li>
+          <li>Choosing higher-efficiency models usually pays back through lower electricity bills.</li>
+        </ul>
+      </div>
+    </main>
 
-  <!-- Page 3: About Us -->
-  <main id="about" class="page-section">
-    <h1>About This Project</h1>
-    <p>This demonstration platform serves as the central hub for hosting upcoming lab exercises and interactive web visualisations created for COS30045 Data Visualisation.</p>
-    <div class="card">
-      <h2>Learning Objectives</h2>
-      <p>Demonstrating foundational HTML semantics, CSS responsive styling, dynamic JavaScript DOM interaction, and CI/CD deployment via GitHub and Vercel.</p>
-    </div>
-  </main>
+    <!-- Page 2: Televisions -->
+    <main id="televisions" class="page-section">
+      <h1 class="page-title">Television Energy Tips</h1>
+      
+      <div class="info-card">
+        <p><strong>Size &amp; technology matter.</strong> Larger screens and older tech (e.g., plasma) use more energy. Modern LED/LCD and OLED sets are generally more efficient.</p>
+        <ul class="nested-list">
+          <li>Use the TV's <em>Energy Saver</em> or <em>Eco</em> mode and reduce brightness where comfortable.</li>
+          <li>Disable "always-listening" voice features if you don't use them; they can add standby draw.</li>
+          <li>Consider star rating and annual kWh on the energy label when purchasing.</li>
+        </ul>
+        <p class="note-text"><em>Placeholder note:</em> Insert simple examples of annual kWh for common TV sizes in Australia to make this page concrete.</p>
+      </div>
 
-  <!-- Footer -->
+      <section class="data-story-section">
+        <h2>TV Energy Insights: Data Story</h2>
+        <p>This section presents findings from the Australian Government's Television Energy Rating dataset. The aim is to help Australian consumers make informed decisions about technology, size, brand, and efficiency.</p>
+        
+        <h3>Chart 1: What TV technologies are most common?</h3>
+        <p class="chart-placeholder-label">Pie Chart</p>
+        <!-- Future visualisations container -->
+        <div id="chart-container" class="chart-box">
+          <span class="placeholder-tag">OLED: 282 (6.84%)</span>
+        </div>
+      </section>
+    </main>
+
+    <!-- Page 3: About Us -->
+    <main id="about" class="page-section">
+      <h1 class="page-title">About This Site</h1>
+      <p class="lead-text">This educational website demonstrates basic web development and shares simple pointers on appliance energy consumption in Australia.</p>
+      
+      <div class="info-card">
+        <h2>Credits</h2>
+        <p>Created by <strong>Your Name</strong>. Design colours match the lightning "power" logo.</p>
+        <p>GenAI tools were used to help draft starter code and placeholder text.</p>
+      </div>
+    </main>
+
+  </div>
+
+  <!-- Sticky / Bottom Footer -->
   <footer>
-    <p>&copy; 2026 BCTH1. All rights reserved.</p>
-    <p class="genai-note">Generative AI Acknowledgement: GenAI was used to assist in generating structural boilerplate code and placeholder content for this website.</p>
+    <div class="footer-container">
+      <div>&copy; 2026 Your Name</div>
+      <div>Built with assistance from GenAI for starter code/content</div>
+    </div>
   </footer>
 
   <script src="script.js"></script>
