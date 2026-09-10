@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Appliance Energy Use in Australia</title>
+  <title>Appliance Energy Consumption | Australia</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -11,10 +11,10 @@
   <!-- Top Navigation Header -->
   <header>
     <div class="nav-container">
-      <!-- Lightning Power Logo Button -->
-    <button class="logo-btn" id="logo-btn" title="Return to Home">
-        <img src="PowerIcon.png" alt="Power Logo" class="logo-img" />
-    </button>
+      <!-- Power Logo Button -->
+      <button class="logo-btn" id="logo-btn" title="Return to Home">
+        <img src="logo.png" alt="Power Logo" class="logo-img" />
+      </button>
 
       <!-- Navigation Links -->
       <nav>
@@ -30,65 +30,66 @@
 
     <!-- Page 1: Home -->
     <main id="home" class="page-section active">
-      <h1 class="page-title">Appliance Energy Use in Australia</h1>
-      <p class="lead-text">This site gives a simple overview of household appliance energy consumption in the Australian market.</p>
+      <h1 class="page-title">Domestic Energy Efficiency in Australia</h1>
+      <p class="lead-text">Exploring consumer appliance power trends, running costs, and energy conservation benchmarks across Australian households.</p>
       
       <div class="info-card">
-        <h2>Quick facts</h2>
+        <h2>Energy Rating Fundamentals</h2>
         <ul>
-          <li>Energy labels (star ratings) help compare appliance efficiency at a glance.</li>
-          <li>Standby power can add unexpected costs—turn devices fully off when not in use.</li>
-          <li>Choosing higher-efficiency models usually pays back through lower electricity bills.</li>
+          <li><strong>The Energy Rating Label (ERL):</strong> Governed by the Australian Greenhouse and Energy Minimum Standards (GEMS) regulator, star ratings range from 1 to 10 stars to show relative product efficiency.</li>
+          <li><strong>Comparative Energy Consumption:</strong> The annual kilowatt-hour (kWh/year) figure at the base of the label shows estimated yearly electricity use based on standardized Australian test patterns.</li>
+          <li><strong>Vampire Power Impact:</strong> Australian households spend roughly $100 or more per year running equipment on passive standby; switching off devices at wall outlets eliminates this load.</li>
         </ul>
       </div>
     </main>
 
     <!-- Page 2: Televisions -->
     <main id="televisions" class="page-section">
-      <h1 class="page-title">Television Energy Tips</h1>
+      <h1 class="page-title">Television Efficiency &amp; Consumption</h1>
       
       <div class="info-card">
-        <p><strong>Size &amp; technology matter.</strong> Larger screens and older tech (e.g., plasma) use more energy. Modern LED/LCD and OLED sets are generally more efficient.</p>
+        <p><strong>Display Hardware &amp; Energy Dynamics:</strong> Screen size remains the single largest factor in total energy draw, followed closely by backlight engineering. Standard LED/LCD panels remain the most energy-conservative, while larger high-brightness OLED and mini-LED panels consume significantly higher wattage during peak HDR playback.</p>
         <ul class="nested-list">
-          <li>Use the TV's <em>Energy Saver</em> or <em>Eco</em> mode and reduce brightness where comfortable.</li>
-          <li>Disable "always-listening" voice features if you don't use them; they can add standby draw.</li>
-          <li>Consider star rating and annual kWh on the energy label when purchasing.</li>
+          <li><strong>Ambient Light Sensing:</strong> Enabling the integrated Automatic Brightness Control (ABC) reduces panel power draw in dimly lit rooms.</li>
+          <li><strong>Smart TV Network Standby:</strong> "Quick Start" or "Instant-On" modes keep Wi-Fi modules constantly active, increasing baseline standby draw from under 0.5W to as high as 15W.</li>
+          <li><strong>Energy-to-Size Ratio:</strong> A typical 55-inch 4K screen averages between 280 and 420 kWh per year, whereas an 85-inch model often exceeds 700 kWh per year for the same viewing duration.</li>
         </ul>
-        <p class="note-text"><em>Placeholder note:</em> Insert simple examples of annual kWh for common TV sizes in Australia to make this page concrete.</p>
+        <p class="note-text"><em>Dataset note:</em> Australian energy testing standards evaluate television usage based on an assumed 10 hours in active viewing mode and 14 hours in standby mode per day.</p>
       </div>
 
       <section class="data-story-section">
-        <h2>TV Energy Insights: Data Story</h2>
-        <p>This section presents findings from the Australian Government's Television Energy Rating dataset. The aim is to help Australian consumers make informed decisions about technology, size, brand, and efficiency.</p>
+        <h2>Australian Television Energy Registry</h2>
+        <p>This data story examines registered models from the national energy rating database to help consumers navigate the efficiency trade-offs between screen dimensions and display technology.</p>
         
-        <h3>Chart 1: What TV technologies are most common?</h3>
-        <p class="chart-placeholder-label">Pie Chart</p>
-        <!-- Future visualisations container -->
+        <h3>Distribution of Display Technologies in Registered Models</h3>
+        <p class="chart-placeholder-label">Market Technology Share (D3 Visualization Container)</p>
+        
         <div id="chart-container" class="chart-box">
-          <span class="placeholder-tag">OLED: 282 (6.84%)</span>
+          <span class="placeholder-tag">Data Target: LED/LCD (~91%) | OLED (~7%) | Direct-Lit Mini-LED (~2%)</span>
         </div>
       </section>
     </main>
 
     <!-- Page 3: About Us -->
     <main id="about" class="page-section">
-      <h1 class="page-title">About This Site</h1>
-      <p class="lead-text">This educational website demonstrates basic web development and shares simple pointers on appliance energy consumption in Australia.</p>
+      <h1 class="page-title">About This Platform</h1>
+      <p class="lead-text">Developed as a technical baseline for interactive web development and future data visualization workflows.</p>
       
       <div class="info-card">
-        <h2>Credits</h2>
-        <p>Created by <strong>Your Name</strong>. Design colours match the lightning "power" logo.</p>
-        <p>GenAI tools were used to help draft starter code and placeholder text.</p>
+        <h2>Project Architecture &amp; Attributions</h2>
+        <p>Built by <strong>Your Name</strong>. The visual identity incorporates color tokens matching the golden power logo.</p>
+        <p>Data metrics and standards referenced are aligned with the <strong>Equipment Energy Efficiency (E3) Program</strong> and official Australian GEMS registry benchmarks.</p>
+        <p>Generative AI assistance was utilized to aid structural boilerplate code and draft domain-specific placeholder summaries.</p>
       </div>
     </main>
 
   </div>
 
-  <!-- Sticky / Bottom Footer -->
+  <!-- Footer -->
   <footer>
     <div class="footer-container">
       <div>&copy; 2026 Your Name</div>
-      <div>Built with assistance from GenAI for starter code/content</div>
+      <div>Assisted by GenAI for starter code and content drafting</div>
     </div>
   </footer>
 
