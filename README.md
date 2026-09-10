@@ -2,7 +2,7 @@
 
 **Unit:** COS30045 Data Visualisation  
 **Task:** T01 (a): Build Appliance Energy Consumption Website  
-**Author:** Bosco
+**Author:** Bosco  
 **Live Site:** [https://t01-a-appliance-energy-consumption.vercel.app/](https://t01-a-appliance-energy-consumption.vercel.app/)  
 **Repository:** [https://github.com/BCTH1/T01-a-Appliance-Energy-Consumption-Website](https://github.com/BCTH1/T01-a-Appliance-Energy-Consumption-Website)
 
@@ -24,7 +24,7 @@ This project is an interactive single-page demonstration website focused on hous
 
 | File / Component | Prompt / Trigger Context | Copilot Contribution |
 | :--- | :--- | :--- |
-| `index.html` | Prompted Copilot to draft copy referencing official Australian GEMS registry testing standards and ERL star rating mechanics. |
+| `index.html` | Prompted Copilot to draft copy referencing official Australian GEMS registry testing standards and ERL star rating mechanics. | Generated semantic HTML structure, section containers, and authentic copy summarizing GEMS benchmarks and star ratings. |
 | `style.css` | Flexbox navbar and color consistency | Suggested CSS variables (`:root`), flex-based centering, and hover transition effects. |
 | `script.js` | Tab switching logic without reloading | Autocompleted the `forEach` loop and `classList.toggle` syntax for switching active view classes. |
 | Visual Tweaks | Adjusting power logo sizing | Assisted in writing `object-fit: cover` and circular clipping rules for the logo button. |
