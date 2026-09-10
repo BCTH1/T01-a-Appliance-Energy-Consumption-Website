@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Appliance Energy Consumption</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation Header -->
+  <header>
+    <div class="logo-container" id="logo-btn" title="Go to Home">
+      <!-- Power Icon SVG -->
+      <svg class="power-icon" viewBox="0 0 24 24" width="28" height="28">
+        <path d="M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42A6.92 6.92 0 0 1 19 12c0 3.87-3.13 7-7 7s-7-3.13-7-7c0-2.38 1.19-4.47 3-5.74L6.58 5.17A8.96 8.96 0 0 0 3 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.74-1.23-5.18-3.17-6.83z" fill="currentColor"/>
+      </svg>
+      <span class="site-title">EnergyAus</span>
+    </div>
+
+    <nav>
+      <button class="nav-link active" data-target="home">Home</button>
+      <button class="nav-link" data-target="televisions">Televisions</button>
+      <button class="nav-link" data-target="about">About Us</button>
+    </nav>
+  </header>
+
+  <!-- Page 1: Home -->
+  <main id="home" class="page-section active">
+    <h1>Australian Household Appliance Energy Overview</h1>
+    <p>Energy rating labels help Australian households compare the running costs and energy efficiency of common domestic appliances.</p>
+    <div class="card">
+      <h2>National Energy Consumption Highlights</h2>
+      <p>Standby power alone accounts for up to <strong>10%</strong> of average household electricity usage across Australia. Investing in higher star-rated appliances significantly reduces lifetime operating costs and greenhouse gas emissions.</p>
+    </div>
+  </main>
+
+  <!-- Page 2: Televisions -->
+  <main id="televisions" class="page-section">
+    <h1>Television Energy Ratings</h1>
+    <p>In the Australian market, television energy consumption varies widely based on panel display technology (OLED, QLED, LED) and screen size.</p>
+    <div class="card">
+      <h2>Energy Rating Breakdown</h2>
+      <ul>
+        <li><strong>Screen Size:</strong> 65-inch screens typically consume 50% more energy than comparable 43-inch models.</li>
+        <li><strong>Star Ratings:</strong> A 7-star rated TV can cut annual running costs by nearly half compared to an equivalent 4-star model.</li>
+        <li><strong>Future Visualisations:</strong> Interactive D3 charts displaying market television data sets will be linked here in upcoming tasks.</li>
+      </ul>
+    </div>
+  </main>
+
+  <!-- Page 3: About Us -->
+  <main id="about" class="page-section">
+    <h1>About This Project</h1>
+    <p>This demonstration platform serves as the central hub for hosting upcoming lab exercises and interactive web visualisations created for COS30045 Data Visualisation.</p>
+    <div class="card">
+      <h2>Learning Objectives</h2>
+      <p>Demonstrating foundational HTML semantics, CSS responsive styling, dynamic JavaScript DOM interaction, and CI/CD deployment via GitHub and Vercel.</p>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 BCTH1. All rights reserved.</p>
+    <p class="genai-note">Generative AI Acknowledgement: GenAI was used to assist in generating structural boilerplate code and placeholder content for this website.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
